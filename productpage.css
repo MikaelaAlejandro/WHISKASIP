@@ -21,7 +21,7 @@ header{
     z-index: 1000;
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ header{
     font-family: "Noto Serif JP", serif;
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 30px;
 }
 
 .nav-links a{
@@ -113,11 +113,6 @@ footer{
 
 @media(max-width:900px){
 
-    .order-section{
-        flex-direction: column;
-        text-align: center;
-    }
-
     .navbar{
         flex-direction: column;
         gap: 15px;
@@ -146,10 +141,6 @@ footer{
     .nav-links{
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .order-form h1{
-        font-size: 2rem;
     }
 
 }
