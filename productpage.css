@@ -22,10 +22,11 @@ header{
 }
 
 .navbar {
-   display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    max-width: 900px;
     margin: auto;
     padding: 20px 0;
 }
@@ -40,7 +41,8 @@ header{
     font-family: "Noto Serif JP", serif;
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 50px;
+    flex-wrap: nowrap;
 }
 
 .nav-links a{
@@ -48,6 +50,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     transition: .3s;
+    white-space: nowrap;
 }
 
 .nav-links a:hover{
