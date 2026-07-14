@@ -24,12 +24,12 @@ header{
 }
 
 .navbar {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 90%;
     margin: auto;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
