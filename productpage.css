@@ -13,7 +13,7 @@ body {
 }
 
 header{
-    font-family: "Yuji Mai", cursive;
+   font-family: "Yuji Mai", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: x-large;
@@ -38,18 +38,17 @@ header{
     font-size: 2rem;
 }
 
-.nav-links {
+.nav-links{
+    font-family: "Noto Serif JP", serif;
     display: flex;
-    gap: 30px;
     list-style: none;
+    gap: 30px;
 }
 
-.nav-links a {
+.nav-links a{
+    color: #f9e9d9;
     text-decoration: none;
-    color: #decab5;
-    font-family: "Noto Serif JP", serif;
-    font-weight: bold;
-    font-style: simple;
+    font-weight: 500;
 }
 
 .nav-links a:hover{
@@ -106,6 +105,13 @@ header{
     font-weight: bold;
     font-style: italic;
 }
+footer{
+    background: #374220;
+    color: #f9e9d9;
+    text-align: center;
+    padding: 20px;
+}
+
 @media(max-width:900px){
     .hero{
         flex-direction: column;
