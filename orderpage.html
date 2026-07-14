@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHISKASIP | Order</title>
+
+    <link rel="stylesheet" href="order.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">whiskasip</h2>
+
+        <ul class="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="productpage.html">Products</a></li>
+            <li><a href="orderpage.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="order-section">
+
+    <div class="order-image">
+        <img src="whiskasip_logo.png" alt="Matcha">
+    </div>
+
+    <div class="order-form">
+
+        <h1>Order Your Matcha</h1>
+
+        <label>Full Name</label>
+        <input type="text" id="name">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Phone Number</label>
+        <input type="text">
+
+        <label>Choose Matcha</label>
+
+        <select id="matcha">
+            <option value="200">Chadori - ₱200</option>
+            <option value="240">Matchata - ₱240</option>
+            <option value="240">Kuro - ₱240</option>
+            <option value="220">Nami - ₱220</option>
+            <option value="280">Banami - ₱280</option>
+            <option value="250">Chabana - ₱250</option>
+            <option value="150">Classic Banana Pudding - ₱150</option>
+            <option value="180">Biscoff Banana Pudding - ₱180</option>
+
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" value="1" min="1">
+
+        <label>Delivery Address</label>
+        <textarea rows="4"></textarea>
+
+        <button onclick="placeOrder()">Place Order</button>
+
+    </div>
+
+</section>
+
+<script src="order.js"></script>
+
+</body>
+</html>

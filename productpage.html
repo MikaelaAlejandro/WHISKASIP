@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHISKASIP | Order</title>
+
+    <link rel="stylesheet" href="productpage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuyu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">whiskasip</h2>
+
+            <ul class="nav-links">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="productpage.html">Products</a></li>
+                <li><a href="orderpage.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Order Your Favorite Matcha</h1>
+        <p>Select a drink below, then complete your order.</p>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="grid">
+
+            <div class="card" onclick="selectProduct('Chadori', 200)">
+                <img src="chadori.png" alt="Chadori">
+                <h3>Chadori</h3>
+                <p>Our classic matcha latte.</p>
+                <p>₱200</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Matchata', 240)">
+                <img src="matchata.png" alt="Matchata">
+                <h3>Matchata</h3>
+                <p>Our horchata mixed with matcha and topped with cinnamon</p>
+                <p>₱240</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Kuro', 240)">
+                <img src="kuro.png" alt="Kuro">
+                <h3>Kuro</h3>
+                <p>Black sesame cream matcha latte</p>
+                <p>₱240</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Nami', 220)">
+                <img src="nami.png" alt="Nami">
+                <h3>Nami</h3>
+                <p>Classic matcha latte topped with seasalt foam and matcha.</p>
+                <p>₱220</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Banami', 280)">
+                <img src="banami.png" alt="Banami">
+                <h3>Banami</h3>
+                <p>Classic matcha latte topped with our signature banana.</p>
+                <p>₱280</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Chabana', 250)">
+                <img src="chabana.png" alt="Chabana">
+                <h3>Chabana</h3>
+                <p>Banana bread matcha topped with caramelized bananas.</p>
+                <p>₱250</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Classic Banana Pudding', 150)">
+                <img src="classic banana pudding.png" alt="Classic Banana Pudding">
+                <h3>Classic Banana Pudding</h3>
+                <p> Our signature classic banana pudding in an 8oz tub.</p>
+                <p>₱150</p>
+            </div>
+
+            <div class="card" onclick="selectProduct('Biscoff Banana Pudding', 180)">
+                <img src="biscoff banana pudding.png" alt="Biscoff Banana Pudding">
+                <h3>Biscoff Banana Pudding</h3>
+                <p> Our signature banana pudding with hints of biscoff and topped
+with a biscoff goodness in an 8oz tub.</p>
+                <p>₱180</p>
+            </div>
+
+        </div>
+    </section>
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Serif JP", serif;
+    background: #f9e9d9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    font-family: "Yuji Mai", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    background: #374220;
+    color: #f9e9d9;
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links{
+    font-family: "Noto Serif JP", serif;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a{
+    color: #f9e9d9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover{
+    color: #7f9f78;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    margin: auto;
+    min-height: 90vh;
+
+    gap: 50px;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
+    font-size: 3.5rem;
+    color: #374220;
+    font-weight: 800;
+    font-style: Bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.btn{
+    font-weight: 600;
+    font-style: bold;
+    display: inline-block;
+    background: #374220;
+    color: #f9e9d9;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    background: #7f9f78;
+}
+
+.hero-image{
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 650px;
+}
+
+.categories{
+    width: 90%;
+    margin: auto;
+    padding: 0 0;
+    text-align: center;
+}
+
+.categories h2{
+    font-weight: 600;
+    font-style: bold;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #374220;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+.card{
+    background: #b3b294;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card h3{
+    font-weight: 700;
+    font-style: bold;
+    font-size: xx-large;
+    margin-top: 20px;
+    color: #374220;
+}
+
+.card p{
+    font-weight: 600;
+    font-style: oblique;
+    font-size: large;
+    padding: 20px;
+}
+
+.about{
+    background: #decab5;
+    padding: 80px 10%;
+}
+
+.about h2{
+    font-weight: 700;
+    font-style: bold;
+    color: #374220;
+    margin-bottom: 20px;
+    font-size: 2.3rem;
+}
+
+.about p{
+    font-weight: 600;
+    font-style:oblique;
+    max-width: 700px;
+}
+
+footer{
+    background: #374220;
+    color: #f9e9d9;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media(max-width:900px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero h1{
+        font-size: 2.6rem;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        gap: 20px;
+    }
+}
+
+@media(max-width:500px){
+     .hero h1{
+        font-size: 2rem;
+    }
+
+     .logo{
+        font-size: 1.6rem;
+    }
+
+    .nav-link{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btn{
+        padding: 12px 25px;
+    }
+}

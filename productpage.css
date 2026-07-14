@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:ital,wght@0,700;1,700&family=Yuji+Mai&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif JP", serif;
+    background: #f9e9d9;
+    color: #333;
+}
+
+header{
+    font-family: "Yuji Mai", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    background: #374220;
+    color: #f9e9d9;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Yuji Mai", cursive;
+    color: #decab5;
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #decab5;
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    font-style: simple;
+}
+
+.nav-links a:hover{
+    color: #7f9f78;
+}
+.hero {
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    color: #374220;
+    font-size: 2.5rem;
+    font-family: "Noto Serif JP", serif;
+}
+
+.products {
+    width: 80%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #b3b294;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: #decab5;
+}
+
+.card img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #374220;
+    font-family: "Noto Serif JP", serif;
+    font-weight: bold;
+    font-style: italic;
+}
